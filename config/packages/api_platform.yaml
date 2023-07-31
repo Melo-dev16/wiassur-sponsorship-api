@@ -1,0 +1,18 @@
+api_platform:
+  title: 'WiASSUR API'
+  description: 'A Symfony API for WiASSUR Sponsorship.'
+  version: '1.0.0'
+  mapping:
+    paths: ['%kernel.project_dir%/src/Entity']
+  swagger:
+    versions: [3]
+  patch_formats:
+    json: ['application/json']
+  eager_loading:
+    force_eager: false
+  formats:
+    json: ['application/json']
+    jsonld: ['application/ld+json']
+    html: ['text/html']
+  defaults:
+    pagination_enabled: false
